@@ -14,36 +14,30 @@ Documentation
 > Keep in mind as well that someone using the app might make a purchase through the app without having received an offer or seen an offer.
 
 ##  Libraries:
-numpy - The fundamental package for scientific computing with Python
-pandas - Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, and most of the data analysis in this project is based on the dataframe in Pandas.
-matplotlib - This is package used for generating statistics plot
-sklearn - This is a simple and efficient tools for predictive data analysis
+* numpy - The fundamental package for scientific computing with Python
+* pandas - Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, and most of the data analysis in this project is based on the dataframe in Pandas.
+* matplotlib - This is package used for generating statistics plot
+* sklearn - This is a simple and efficient tools for predictive data analysis
 seaborn - This is a powerful Python data visualization library based on matplotlib. It provides high level interface for drawing statistical graphics
-time - This package is used to transform datetime format
+* time - This package is used to transform datetime format
 warnings - This package is used to filter warning info
-visuals - This is a package from the Udacity Program Introduction to Machine Learning with Pytorch, which supports to plot the classification result and features
+* visuals - This is a package from the Udacity Program Introduction to Machine Learning with Pytorch, which supports to plot the classification result and features
 
 ## Project Repository files:
-> Starbucks_Data_Exploration.ipynb                  //Code with appropriate comments, analysis, and documentation.
-> visuals.py					    //Supplementary visualization code
-> df_clean_20230208.pickle			    //The cleaned data
-> README.md               			    //Documentation
+* Starbucks_Data_Exploration.ipynb	-	Code with appropriate comments, analysis, and documentation.
+* visuals.py				-	Supplementary visualization code
+* df_clean_20230208.pickle			    //The cleaned data
+* README.md               			    //Documentation
 
 ## Result Summary:
->  Amoung the three classifiers experimented, Adaboost performs better than others with accuracy 0.748 and f1 score 0.690, which is also far better than the baseline score(accuracy 0.404, f1 score 0.576)
->  The Adaboost classifier optimized with Grid Search on three hyper parameters(learning_rate, n_estimators, algorithm) get scores(accuracy 0.748, f1 score 0.692). The f1 score is a little better. The best parameters are:algorithm='SAMME.R', learning_rate=0.1, n_estimators=250.
->  The top five important features are:
-	1.income
-	2.social
-	3.difficulty
-	4.reward
-	5.2016
-   The income is the most important feature for the prediction. Then all the second, third, forth are the properties of offer. It's quite interesting that Age and Gender are not important features for this prediction.
+*  Amoung the three classifiers experimented, Adaboost performs better than others with accuracy 0.748 and f1 score 0.690, which is also far better than the baseline score(accuracy 0.404, f1 score 0.576)
+*  The Adaboost classifier optimized with Grid Search on three hyper parameters(learning_rate, n_estimators, algorithm) get scores(accuracy 0.748, f1 score 0.692). The f1 score is a little better. The best parameters are:algorithm='SAMME.R', learning_rate=0.1, n_estimators=250.
+*  The top five important features are:(1.income, 2.social, 3.difficulty, 4.reward, 5.2016). The income is the most important feature for the prediction. Then all the second, third, forth are the properties of offer. It's quite interesting that Age and Gender are not important features for this prediction.
 
 ## Acknowledgements
 My thanks would go to the Udacity Platform and mentors, because I have benifited the knowledge from Udacity programs Data Scientist and Intro to Machine Learning with Pytorch and use some demo codes from them. My thanks also goes to mentors, who give me valuable advice during my learning journey.
 
-##References
+## References
 > https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
 > https://blog.csdn.net/weixin_44838881/article/details/124836755
 > https://stackoverflow.com/questions/30132282/datetime-to-string-with-series-in-pandas
