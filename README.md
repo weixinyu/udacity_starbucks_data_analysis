@@ -26,8 +26,8 @@ warnings - This package is used to filter warning info
 ## Project Repository files:
 * Starbucks_Data_Exploration.ipynb	-	Code with appropriate comments, analysis, and documentation.
 * visuals.py				-	Supplementary visualization code
-* df_clean_20230208.pickle			    //The cleaned data
-* README.md               			    //Documentation
+* df_clean_20230208.pickle		-	The cleaned data
+* README.md               		-	Documentation
 
 ## Result Summary:
 *  Amoung the three classifiers experimented, Adaboost performs better than others with accuracy 0.748 and f1 score 0.690, which is also far better than the baseline score(accuracy 0.404, f1 score 0.576)
