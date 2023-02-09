@@ -33,6 +33,7 @@ warnings - This package is used to filter warning info
 *  Amoung the three classifiers experimented, Adaboost performs better than others with accuracy 0.748 and f1 score 0.690, which is also far better than the baseline score(accuracy 0.404, f1 score 0.576)
 *  The Adaboost classifier optimized with Grid Search on three hyper parameters(learning_rate, n_estimators, algorithm) get scores(accuracy 0.748, f1 score 0.692). The f1 score is a little better. The best parameters are:algorithm='SAMME.R', learning_rate=0.1, n_estimators=250.
 *  The top five important features are:(1.income, 2.social, 3.difficulty, 4.reward, 5.2016). The income is the most important feature for the prediction. Then all the second, third, forth are the properties of offer. It's quite interesting that Age and Gender are not important features for this prediction.
+*  The detailed discussion about this project is posted to:https://blog.csdn.net/weixinyu2012/article/details/128946775
 
 ## Acknowledgements
 My thanks would go to the Udacity Platform and mentors, because I have benifited the knowledge from Udacity programs Data Scientist and Intro to Machine Learning with Pytorch and use some demo codes from them. My thanks also goes to mentors, who give me valuable advice during my learning journey.
